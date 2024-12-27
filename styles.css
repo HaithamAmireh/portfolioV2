@@ -222,7 +222,6 @@ a:hover {
 #contact {
   text-align: center;
   background-color: var(--vscode-tab);
-  height: 100px;
   padding: 50px;
 }
 
