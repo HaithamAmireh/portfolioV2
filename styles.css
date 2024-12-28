@@ -235,7 +235,7 @@ a:hover {
   top: 10px;
   right: 10px;
   padding: 10px;
-  background-color: var(--main);
+  background-color: var(--vscode-active-tab);
   color: var(--text);
   border: none;
   border-radius: 50%;
