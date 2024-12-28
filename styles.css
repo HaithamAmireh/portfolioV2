@@ -26,6 +26,10 @@ body {
   background: url("./images/1.png") no-repeat center center/cover;
 }
 
+body.light-theme {
+  background: url("./images/3.png") no-repeat center center/cover;
+}
+
 section {
   padding: 50px 20px;
   color: var(--text);
@@ -34,6 +38,7 @@ section {
 #hero {
   text-align: center;
   color: var(--text);
+  margin-top: 10px;
 }
 #prefix-name {
   animation: blinker 1s linear infinite;
@@ -225,6 +230,27 @@ a:hover {
   padding: 50px;
 }
 
+.theme-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: var(--main);
+  color: var(--text);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+  background-color: var(--text-sub);
+}
+
+.theme-toggle i {
+  font-size: 1.5em;
+}
+
 @media (max-width: 600px) {
   h1 {
     font-size: 2em;
@@ -242,6 +268,9 @@ a:hover {
     padding: 30px 10px;
   }
 
+  #hero {
+    margin-top: 30px;
+  }
   .hero-content {
     flex-direction: column;
   }
