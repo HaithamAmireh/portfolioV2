@@ -65,7 +65,7 @@ section {
   margin: 30px;
   width: 200px;
   height: 200px;
-  animation: spin 10s linear infinite;
+  animation: spin 5s linear infinite;
 }
 
 @keyframes spin {
