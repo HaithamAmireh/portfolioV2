@@ -1,286 +1,292 @@
 :root {
-  --main: #a599e9;
-  --text: #ffffff;
-  --text-sub: #ff628c;
-  --vscode-main: #2d2b55a8;
-  --vscode-sub: #1e1e3f;
-  --vscode-active-tab: #2d2b55;
-  --vscode-tab: #1e1e3fdd;
-  --vscode-text-color-main: #ffffff;
-  --vscode-top-lower-bar: #1e1e3f;
-  --sb-track-color: #1e1e3f;
-  --sb-thumb-color: #2d2b55;
-  --sb-thumb-hover-color: #4d4b77;
-  --sb-size: 12px;
-  --mobile-padding: 15px;
-  --tablet-width: 768px;
-  --desktop-width: 1024px;
+    --main: #a599e9;
+    --text: #ffffff;
+    --text-sub: #ff628c;
+    --vscode-main: #2d2b55a8;
+    --vscode-sub: #1e1e3f;
+    --vscode-active-tab: #2d2b55;
+    --vscode-tab: #1e1e3fdd;
+    --vscode-text-color-main: #ffffff;
+    --vscode-top-lower-bar: #1e1e3f;
+    --sb-track-color: #1e1e3f;
+    --sb-thumb-color: #2d2b55;
+    --sb-thumb-hover-color: #4d4b77;
+    --sb-size: 12px;
+    --mobile-padding: 15px;
+    --tablet-width: 768px;
+    --desktop-width: 1024px;
 }
 
 body {
-  font-family: "Ubuntu", Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  color: var(--text);
-  background: url("./images/3.png") no-repeat center center/cover;
+    font-family: "Ubuntu", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--text);
+    background: url("./images/3.png") no-repeat center center/cover;
 }
 
 body.light-theme {
-  background: url("./images/3.png") no-repeat center center/cover;
+    background: url("./images/3.png") no-repeat center center/cover;
 }
 
 section {
-  padding: 50px 20px;
-  color: var(--text);
+    padding: 50px 20px;
+    color: var(--text);
 }
 
 #hero {
-  text-align: center;
-  color: var(--text);
-  margin-top: 10px;
+    text-align: center;
+    color: var(--text);
+    margin-top: 10px;
 }
 #prefix-name {
-  animation: blinker 1s linear infinite;
-  color: var(--text-sub);
+    animation: blinker 1s linear infinite;
+    color: var(--text-sub);
 }
 
 @keyframes blinker {
-  50% {
-    opacity: 0%;
-  }
+    50% {
+        opacity: 0%;
+    }
 }
 
 .hero-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: rgba(0, 0, 0, 0.143);
-  padding: 10px;
-  border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.143);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .hero-content img {
-  margin: 30px;
-  width: 200px;
-  height: 200px;
-  animation: spin 5s linear infinite;
+    margin: 30px;
+    width: 200px;
+    height: 200px;
+    animation: spin 5s linear infinite;
 }
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .hero-text {
-  max-width: 800px;
-  text-align: left;
+    max-width: 800px;
+    text-align: left;
 }
 
 .hero-text h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
 .hero-text p {
-  font-size: 1.2em;
-  margin-bottom: 10px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
 h1,
 h2,
 h3 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 h1 {
-  font-size: 2.5em;
+    font-size: 2.5em;
 }
 
 h2 {
-  font-size: 2em;
+    font-size: 2em;
 }
 
 h3 {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 p {
-  margin: 10px 0;
+    margin: 10px 0;
 }
 
 a {
-  color: var(--text-sub);
-  text-decoration: none;
+    color: var(--text-sub);
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .terminal {
-  background-color: var(--vscode-tab);
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  color: var(--vscode-text-color-main);
-  font-family: "Courier New", Courier, monospace;
-  padding: 20px;
+    background-color: var(--vscode-tab);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: var(--vscode-text-color-main);
+    font-family: "Courier New", Courier, monospace;
+    padding: 20px;
 }
 
 .terminal-header {
-  background-color: var(--vscode-main);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
+    background-color: var(--vscode-main);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .terminal-header .buttons {
-  display: flex;
-  gap: 5px;
+    display: flex;
+    gap: 5px;
 }
 
 .terminal-header .buttons span {
-  background-color: #ff5f56;
-  border-radius: 50%;
-  display: inline-block;
-  height: 12px;
-  width: 12px;
+    background-color: #ff5f56;
+    border-radius: 50%;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
 }
 
 .terminal-header .buttons .minimize {
-  background-color: #ffbd2e;
+    background-color: #ffbd2e;
 }
 
 .terminal-header .buttons .maximize {
-  background-color: #27c93f;
+    background-color: #27c93f;
 }
 
 .terminal-header .title {
-  color: var(--vscode-text-color-main);
-  font-size: 14px;
+    color: var(--vscode-text-color-main);
+    font-size: 14px;
 }
 
 .terminal-body {
-  padding: 10px;
+    padding: 10px;
 }
 
 .terminal-body .command {
-  color: #00ff00;
+    color: #00ff00;
 }
 
 .terminal-body .output {
-  color: #00ffff;
-  margin-left: 20px;
+    color: #00ffff;
+    margin-left: 20px;
 }
 
 .terminal-body ul {
-  list-style-type: none;
-  padding-left: 20px;
+    list-style-type: none;
+    padding-left: 20px;
 }
 
 .terminal-body ul li {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .terminal-body .sh {
-  color: #c34756;
+    color: #c34756;
 }
 
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .project-card {
-  background-color: var(--vscode-tab);
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  color: var(--text);
-  padding: 20px;
+    background-color: var(--vscode-tab);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: var(--text);
+    padding: 20px;
+
+    will-change: transform;
+    transform-style: preserve-3d;
+    transition:
+        transform 0.01s ease,
+        box-shadow 0.3s ease;
 }
 
 .project-card h3 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .project-card p {
-  margin: 10px 0;
+    margin: 10px 0;
 }
 
 .project-card a {
-  color: var(--text-sub);
-  text-decoration: none;
+    color: var(--text-sub);
+    text-decoration: none;
 }
 
 .project-card a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 #contact {
-  text-align: center;
-  background-color: var(--vscode-tab);
-  padding: 50px;
+    text-align: center;
+    background-color: var(--vscode-tab);
+    padding: 50px;
 }
 
 .theme-toggle {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 10px;
-  background-color: var(--vscode-active-tab);
-  color: var(--text);
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: var(--vscode-active-tab);
+    color: var(--text);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .theme-toggle:hover {
-  background-color: var(--text-sub);
+    background-color: var(--text-sub);
 }
 
 .theme-toggle i {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 @media (max-width: 600px) {
-  h1 {
-    font-size: 2em;
-  }
+    h1 {
+        font-size: 2em;
+    }
 
-  h2 {
-    font-size: 1.5em;
-  }
+    h2 {
+        font-size: 1.5em;
+    }
 
-  h3 {
-    font-size: 1.2em;
-  }
+    h3 {
+        font-size: 1.2em;
+    }
 
-  section {
-    padding: 30px 10px;
-  }
+    section {
+        padding: 30px 10px;
+    }
 
-  #hero {
-    margin-top: 30px;
-  }
-  .hero-content {
-    flex-direction: column;
-  }
+    #hero {
+        margin-top: 30px;
+    }
+    .hero-content {
+        flex-direction: column;
+    }
 
-  .hero-content img {
-    margin-bottom: 20px;
-  }
+    .hero-content img {
+        margin-bottom: 20px;
+    }
 
-  .terminal-body .output {
-    color: #00ffff;
-    margin-left: 5px;
-  }
+    .terminal-body .output {
+        color: #00ffff;
+        margin-left: 5px;
+    }
 }
