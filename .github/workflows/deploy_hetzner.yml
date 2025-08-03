@@ -23,6 +23,9 @@ jobs:
           target: ${{ secrets.DEPLOY_PATH }}
 
       - name: Reload nginx on server
-        run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.HETZNER_USER }}@${{ secrets.HETZNER_HOST }} \
-            "sudo systemctl reload nginx"
+        uses: appleboy/ssh-action@v0.1.5
+        with:
+          host:      ${{ secrets.HETZNER_HOST }}
+          username:  ${{ secrets.HETZNER_USER }}
+          key:       ${{ secrets.HETZNER_SSH_KEY }}
+          script:    sudo systemctl reload nginx
